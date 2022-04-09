@@ -1,0 +1,18 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: reporting-func
+  namespace: default
+  labels:
+    app: reporting-func
+spec:
+  template:
+    metadata:
+      labels:
+        app: reporting-func
+    spec:
+      containers:
+      - image: gcr.io/sodium-hangar-309319/reporting-func
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: "/usr/src/app/sglynnbot-key.json"

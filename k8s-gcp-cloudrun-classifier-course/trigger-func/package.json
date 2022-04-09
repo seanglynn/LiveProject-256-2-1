@@ -1,0 +1,29 @@
+{
+  "name": "knative-classifier-trigger-func",
+  "version": "1.0.0",
+  "description": "Simple hello world sample in Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "sglynn",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.10.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "firebase-admin": "^9.5.0",
+    "uid": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanglynn/K8s_Dev/tree/main/k8s-knative-classifier-course"
+  },
+  "keywords": [
+    "knative",
+    "firebase",
+    "node",
+    "func"
+  ]
+}

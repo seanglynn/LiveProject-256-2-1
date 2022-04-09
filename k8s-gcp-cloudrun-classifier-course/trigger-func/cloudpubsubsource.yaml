@@ -1,0 +1,13 @@
+apiVersion: events.cloud.google.com/v1
+kind: CloudPubSubSource
+metadata:
+  name: cloudpubsubsource-feedback-created
+  labels:
+    app: trigger-func
+spec:
+  topic: feedback-created
+  sink:
+    ref:
+      apiVersion: v1
+      kind: Service
+      name: trigger-func
